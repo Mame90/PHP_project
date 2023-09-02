@@ -1,0 +1,2 @@
+les objet class nous permet de faire tous simplement que des declaration des propriets et des objets 
+les constructeurs la on fait tous courts l'initialisastion des bjets declarer

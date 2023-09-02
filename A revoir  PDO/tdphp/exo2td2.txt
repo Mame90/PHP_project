@@ -1,0 +1,26 @@
+
+exo2td2
+
+<?php
+$tab1= array('prenom'=>'modou', 'nom'=>'ngom', 'adesse'=>'Thiandene');
+$tab2= array("prenom"=>'mamadou', "region"=>'thies', "departement"=>'mbour');
+foreach($tab1 as $cle1=>$vtab1){
+echo $vtab1."  ";
+}
+echo "<br/>";
+foreach($tab2 as $cle2=>$vtab2){
+echo $vtab2."  ";
+} 
+echo "<br/>";
+$fus = array_merge($tab1,$tab2);
+print_r ($fus);
+foreach ($fus as $clefus=>$vfus){
+    echo $clefus." => ".$vfus." # ";
+}
+echo "<br/>";
+$plus=array_merge($tab1+$tab2); 
+foreach ( $plus as $cleplus=>$plus){
+    echo $cleplus." => ".$plus." #";
+}
+?>
+

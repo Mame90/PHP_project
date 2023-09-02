@@ -1,0 +1,55 @@
+<table border="1" width='"300px' height='50px'>
+<?php
+$tab=array();
+for($i=0;$i<10;$i++){
+    $tab[$i]=rand(0,20);
+}
+echo "<tr>";
+for ($i=0;$i<10;$i++){
+?>
+<td 
+<?php  
+if ($tab[$i]%2==0)
+            echo "bgcolor='yellow' ";
+        else
+        echo "bgcolor='red' ";
+?>
+>
+    <?php 
+        echo $tab[$i];
+    ?>
+</td>
+<?php
+ }
+        echo "</tr>";
+ ?>
+</table>
+ <?php 
+$np=0;
+$sp=0;
+$imp=0;
+$simp=0;
+?>
+ <?php 
+ for ($i=0;$i<10;$i++){
+           if ($tab[$i]%2==0) {
+               $np=$np+1;
+               $sp=$sp+$i;
+           }
+           else {
+               $imp=$imp+1;
+               $simp=$imp+$i;
+           } 
+        }    
+        $mp=$sp/$np;
+        $mimp=$sp/$np;
+           ?> 
+           <?php
+           echo "le nombre paires=".$np ;
+           echo "la somme des nombres paires =".$sp ;
+           echo "la moyenne des nombres paires=".$mp ;
+           echo "le nombre impaires=".$imp ;
+           echo "la somme des nombres impaires =".$simp ;
+           echo "la moyenne des nombres impaires=".$mimp ;
+           ?> 
+           </table>

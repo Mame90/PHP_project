@@ -1,0 +1,64 @@
+<!Doctype html>
+   <head>
+       <title>formulaire</title>
+       <meta charset="utf-8">
+   </head>
+   <body>
+       <form method="Post" name="Formulaire"  action="information.php">
+           <fieldset>
+               <legend>Information</legend>
+               <table>
+                   <tr>
+                       <td>Nom</td><td><input type="text" name="Nom" placeholder="Nom"></td>
+                   </tr>
+                   <tr>
+                    <td>Prenom</td><td><input type="text" name="Prenom" placeholder="Prenom"></td>
+                </tr>
+                <tr>
+                    <td>Age</td><td><input type="number" name="age" placeholder="Age"></td>
+                </tr>
+                <tr>
+                    <td>sexe</td><td>
+                   Homme<input type="radio" name="Homme"  placeholder="Homme">
+                   Femme<input type="radio" name="sexe"   placeholder="Femme"></td>
+                </tr>
+                <tr>
+                    <td>Commentaire</td>
+                    <td><textarea type="text" name="commentaire" placeholder="votre commentaire" cols="25px" rows="5">
+
+                    </textarea>
+                </tr>
+                <tr>
+                    <td>Pays</td><td><input type="text" name="Pays" placeholder="Pays"></td>
+                </tr>
+                <tr>
+                    <td>Region</td><td><input type="text" name="region" placeholder="region"></td>
+                </tr>
+                <tr>
+                <td>Universite</td><td><select>                  
+                                            <option value="UADB" selected>UADB</option> 
+                                            <option value="UCAD" >UCAD</option>
+                                            <option value="UGB" >UGB</option>
+                                            <option value="UASZ" >UASZ</option>
+                                            <option value="UVS" >UVS</option>
+                    </select></td>
+ 
+                </tr>
+                <td>Nationnalite</td><td><select>                  
+                    <option value="Senegalaise"  selected>Senegalaise</option> 
+                    <option value="Gambien" >Gambien</option>
+                    <option value="Malien" >Malien</option>
+                    <option value="Ivoirien" >Ivoirien</option>
+                    <option value="Marocain" >Marocain</option>
+</select></td>
+
+</tr>
+<tr>
+    <td><input type="submit" name="valider" value="valider">
+        <input type="reset" name="valider" value="Annuler">
+    </td>
+
+</tr>
+               </table>
+           </fieldset>
+       </form>

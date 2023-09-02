@@ -1,0 +1,13 @@
+<?php
+$tab=array (
+    "uadb10"=>array('prenom'=>'Fallou','nom'=>'diop','ville'=>'linguere','age'=>'20'),
+    "uadb20"=>array('prenom'=>'Fatou','nom'=>'FAll','ville'=>'Thies','age'=>'21'),
+    "uadb30"=>array('prenom'=>'Khadim','nom'=>'Sarr','ville'=>'Kaolack','age'=>'22')
+);
+foreach($tab as $modou=>$ngom){
+    echo "<strong>".$modou."</strong>";
+    echo "<br/>";
+    foreach($ngom as $soncle=>$sonvaleur){
+        echo $soncle.":".$sonvaleur."<br/>";
+    }
+}

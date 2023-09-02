@@ -1,0 +1,65 @@
+
+page 1:
+
+<form method="post" action="traitement.php">
+    <input type="number" name="nombre">
+    <input type="submit" name="afficher" value="afficher">
+</form>
+<?php
+if(isset ($_GET["vide"])){
+    echo $_GET["vide"];
+}
+if(isset ($_GET["taille"])){
+    echo $_GET["taille"];
+}
+?>
+
+page2
+
+<?php
+function multiplication ($n) {
+   echo "<table border 1>";
+   for ($i=1; $i<=10; $i++){
+    echo "<tr>";
+    echo "</td>".$n."</td>";
+    echo "</td>"*"</td>";
+    echo "</td>".$i."</td>";
+    echo "</td>"="</td>";"</td>";
+    echo "</td>".$n*$i."</td>";
+    echo "</tr>";
+    echo "</table>";
+}
+?>
+<?php
+
+function matrice ($n1 ,$n2){
+    echo "<table border=1>";
+    for ($i=1; $i<=10; $i++){
+        echo "<tr>";
+        for ($j=1; $j<=10; $j++){
+            echo "</td>".$i*$j."</td>";
+
+}
+echo "</tr>";
+}
+echo "</table>";
+}
+
+
+page3
+
+<?php
+include("fonction.php");
+if(isset($_POST["afficher"])){
+    $nombre=$_POST["nombre"] ;
+    if (empty($nombre)){
+        header("location: form.php?vide=remplire la zone");
+    }
+    if($nombre>12){
+        header("location:form.php?taille=nombre ne doit pas depasser 12"  );
+    }
+    multiplication($nombre);
+    matrice($nombre, $nombre);
+}
+
+

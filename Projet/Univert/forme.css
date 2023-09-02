@@ -1,0 +1,17 @@
+#h1{
+    border: 3px solid rgb(187, 43, 43);
+    border-radius: 50px;
+    margin-bottom: 50px;
+}
+form{
+    border: 1px solid #ffff;
+    border-radius: 5px;
+}
+.banner .banner-content{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 30%;
+    color: #ffffff;
+    opacity: 0.5;
+}
